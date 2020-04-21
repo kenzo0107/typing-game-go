@@ -1,7 +1,7 @@
 ---
 builds:
   - main: main.go
-    binary: typing-game-go
+    binary: main
     goos:
       - windows
       - darwin
