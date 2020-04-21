@@ -1,0 +1,10 @@
+---
+builds:
+  - main: main.go
+    binary: typing-game-go
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
