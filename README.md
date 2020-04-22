@@ -14,5 +14,11 @@ Typing Game in Go
 ## Usage
 
 ```sh
-$ typing-game-go
+// default: time limit = 10 sec
+$ ./typing-game-go
+```
+
+```sh
+// time limit = 20 sec
+$ ./typing-game-go -d 20s
 ```

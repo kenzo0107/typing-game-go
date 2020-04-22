@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"context"
+	"flag"
 	"fmt"
 	"io"
 	"os"
@@ -11,7 +12,7 @@ import (
 	"github.com/tjarratt/babble"
 )
 
-// タイムリミットは 10 秒
+// タイムリミットのデフォルト 10 秒
 const timeLimit = 10
 
 // スコア初期値
@@ -20,9 +21,13 @@ var score int = 0
 var (
 	babbler  babble.Babbler
 	question string
+	d        time.Duration
 )
 
 func init() {
+	flag.DurationVar(&d, "d", timeLimit*time.Second, "duration flag")
+	flag.Parse()
+
 	babbler = babble.NewBabbler()
 	babbler.Count = 1
 }
@@ -37,8 +42,7 @@ func _main() {
 
 	// タイムアウト処理付き context
 	bc := context.Background()
-	t := timeLimit * time.Second
-	ctx, cancel := context.WithTimeout(bc, t)
+	ctx, cancel := context.WithTimeout(bc, d)
 	defer cancel()
 
 	start := time.Now()
