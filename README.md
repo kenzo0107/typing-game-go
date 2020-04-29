@@ -1,9 +1,11 @@
+![](logo.png)
+
 ![static check](https://github.com/kenzo0107/typing-game-go/workflows/static%20check/badge.svg)
 ![goreleaser](https://github.com/kenzo0107/typing-game-go/workflows/goreleaser/badge.svg)
 
 Typing Game in Go
 
-## install 
+## install
 
 ```
 $ go get -u github.com/kenzo0107/typing-game-go
@@ -28,3 +30,11 @@ $ ./typing-game-go
 // time limit = 20 sec
 $ ./typing-game-go -d 20s
 ```
+
+## LICENSE
+
+[MIT License](https://github.com/kenzo0107/typing-game-go/blob/master/LICENSE)
+
+## Note
+
+Icon made by bqlqn from [www.flaticon.com](https://www.flaticon.com)
