@@ -3,6 +3,12 @@
 
 Typing Game in Go
 
+## install 
+
+```
+$ go get -u github.com/kenzo0107/typing-game-go
+```
+
 ## install from release
 
 1. download from [release page](https://github.com/kenzo0107/typing-game-go/releases)
