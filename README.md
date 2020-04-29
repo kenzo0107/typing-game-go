@@ -30,3 +30,11 @@ $ ./typing-game-go
 // time limit = 20 sec
 $ ./typing-game-go -d 20s
 ```
+
+## LICENSE
+
+[MIT License](https://github.com/kenzo0107/typing-game-go/blob/master/LICENSE)
+
+## Note
+
+Icon made by bqlqn from [www.flaticon.com](https://www.flaticon.com)
