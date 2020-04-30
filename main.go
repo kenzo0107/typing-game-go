@@ -72,12 +72,11 @@ func _main() {
 }
 
 func countdown() {
-	fmt.Print("3 ")
-	time.Sleep(time.Second)
-	fmt.Print("2 ")
-	time.Sleep(time.Second)
-	fmt.Print("1 ")
-	time.Sleep(time.Second)
+	for i := 3; i > 0; i-- {
+		fmt.Print(i)
+		fmt.Print(" ")
+		time.Sleep(time.Second)
+	}
 	fmt.Println("Go !")
 }
 
